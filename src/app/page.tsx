@@ -1,5 +1,6 @@
 import Image from "next/image";
 import imageSrc from "./assets/1.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,12 +20,18 @@ export default function Home() {
           src={imageSrc}
           //src="./1.jpg" 
           alt="Description of the image"
-          width={600}
+          width={1100}
           height={200} 
           className="rounded-lg shadow-lg"
         />
-        
+       
       </div>
+      <div className="mt-8 flex justify-end">
+      <Link  className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800" href={""} 
+        >
+          See project
+        </Link>
+        </div>
     </main>
   );
 }
