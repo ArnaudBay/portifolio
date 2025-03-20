@@ -1,23 +1,22 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Importer usePathname
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu as MenuIcon, X } from 'lucide-react';
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const pathname = usePathname(); // Récupérer le chemin actuel
+  const pathname = usePathname();
 
   return (
     <header className="w-full px-6 py-8">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
+       
         <Link href="/" className="text-2xl font-serif">
           ArnaudBay
         </Link>
 
-        {/* Mobile Menu Button */}
+        {/* Btn menu */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="z-20 sm:hidden"
@@ -25,7 +24,7 @@ export default function Menu() {
           {isOpen ? <X /> : <MenuIcon />}
         </button>
 
-        {/* Menu Items */}
+        {/* menu */}
         <div
           className={`fixed inset-0 bg-white sm:relative sm:bg-transparent ${
             isOpen ? 'flex' : 'hidden sm:flex'
@@ -60,11 +59,11 @@ export default function Menu() {
               Services
             </Link>
 
-            {/* Dropdown for Projects */}
+            {/* Liste proj */}
             <div
               className="relative"
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
+              onMouseEnter={() => setIsOpen(true)}
+              onMouseLeave={() => setIsOpen(false)}
             >
               <button
                 className={`text-lg hover:text-gray-600 ${
@@ -73,34 +72,25 @@ export default function Menu() {
               >
                 Projects
               </button>
-              {isDropdownOpen && (
+              {isOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md">
                   <Link
                     href="/projects/project1"
-                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
-                      pathname === '/projects/project1' ? 'underline' : ''
-                    }`}
-                    onClick={() => setIsOpen(false)}
+                    className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Project 1
+                   Application Mobile
                   </Link>
                   <Link
                     href="/projects/project2"
-                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
-                      pathname === '/projects/project2' ? 'underline' : ''
-                    }`}
-                    onClick={() => setIsOpen(false)}
+                    className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Project 2
+                    Application Web
                   </Link>
                   <Link
                     href="/projects/project3"
-                    className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
-                      pathname === '/projects/project3' ? 'underline' : ''
-                    }`}
-                    onClick={() => setIsOpen(false)}
+                    className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Project 3
+                    Application Desktop
                   </Link>
                 </div>
               )}
