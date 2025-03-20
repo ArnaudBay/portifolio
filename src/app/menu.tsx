@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 export default function Menu() {
   const [activeItem, setActiveItem] = useState('Work');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ['Work', 'About', 'Our Services', 'Projects'];
 
@@ -15,9 +16,22 @@ export default function Menu() {
           Bergen
         </Link>
 
+        {/* Burger Menu Button */}
+        <button
+          className="block md:hidden text-2xl"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? '✖' : '☰'}
+        </button>
+
         {/* Navigation Items */}
-        <div className="flex items-center gap-12">
-          <ul className="flex items-center gap-8">
+        <div
+          className={`${
+            isMenuOpen ? 'block' : 'hidden'
+          } absolute top-20 left-0 w-full bg-white shadow-md md:static md:flex md:items-center md:gap-12 md:shadow-none`}
+        >
+          <ul className="flex flex-col items-center gap-6 md:flex-row md:gap-8">
             {menuItems.map((item) => (
               <li key={item}>
                 <Link
@@ -27,7 +41,10 @@ export default function Menu() {
                       ? 'text-black after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-black'
                       : 'text-gray-600 hover:text-black'
                   }`}
-                  onClick={() => setActiveItem(item)}
+                  onClick={() => {
+                    setActiveItem(item);
+                    setIsMenuOpen(false); // Close menu on click
+                  }}
                 >
                   {item}
                 </Link>
@@ -38,7 +55,8 @@ export default function Menu() {
           {/* Contact Button */}
           <Link
             href="/contact"
-            className="px-7 py-4 bg-black text-white  text-base hover:bg-gray-800 transition-colors"
+            className="block px-7 py-4 bg-black text-white text-base hover:bg-gray-800 transition-colors md:inline-block"
+            onClick={() => setIsMenuOpen(false)} // Close menu on click
           >
             Contact Us
           </Link>
