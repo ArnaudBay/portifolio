@@ -1,10 +1,11 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Menu as MenuIcon, X } from 'lucide-react';
 
 export default function Menu() {
   const [activeItem, setActiveItem] = useState('Work');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = ['Work', 'About', 'Our Services', 'Projects'];
 
@@ -12,26 +13,32 @@ export default function Menu() {
     <header className="w-full px-6 py-8">
       <nav className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-serif">
+        <Link href="/" className="text-2xl font-serif z-10">
           Bergen
         </Link>
 
-        {/* Burger Menu Button */}
+        {/* Mobile Menu Button */}
         <button
-          className="block md:hidden text-2xl"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsOpen(!isOpen)}
+          className="z-10 sm:hidden"
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? '✖' : '☰'}
+          {isOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <MenuIcon className="h-6 w-6" />
+          )}
         </button>
 
-        {/* Navigation Items */}
+        {/* Navigation Items - Mobile & Desktop */}
         <div
           className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } absolute top-20 left-0 w-full bg-white shadow-md md:static md:flex md:items-center md:gap-12 md:shadow-none`}
+            isOpen
+              ? 'fixed inset-0 bg-white flex items-center justify-center'
+              : 'hidden'
+          } sm:relative sm:flex sm:items-center sm:gap-12`}
         >
-          <ul className="flex flex-col items-center gap-6 md:flex-row md:gap-8">
+          <ul className="flex flex-col items-center gap-8 sm:flex-row">
             {menuItems.map((item) => (
               <li key={item}>
                 <Link
@@ -43,20 +50,29 @@ export default function Menu() {
                   }`}
                   onClick={() => {
                     setActiveItem(item);
-                    setIsMenuOpen(false); // Close menu on click
+                    setIsOpen(false);
                   }}
                 >
                   {item}
                 </Link>
               </li>
             ))}
+            {/* Contact Button - Mobile */}
+            <li className="sm:hidden">
+              <Link
+                href="/contact"
+                className="px-6 py-3 bg-black text-white rounded-full text-base hover:bg-gray-800 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
 
-          {/* Contact Button */}
+          {/* Contact Button - Desktop */}
           <Link
             href="/contact"
-            className="block px-7 py-4 bg-black text-white text-base hover:bg-gray-800 transition-colors md:inline-block"
-            onClick={() => setIsMenuOpen(false)} // Close menu on click
+            className="hidden sm:block px-6 py-3 bg-black text-white rounded-full text-base hover:bg-gray-800 transition-colors"
           >
             Contact Us
           </Link>
