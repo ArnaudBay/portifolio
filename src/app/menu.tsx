@@ -33,9 +33,9 @@ export default function Menu() {
         >
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <Link
-              href="/work"
+              href="/Work"
               className={`text-lg hover:text-gray-600 ${
-                pathname === '/work' ? 'underline' : ''
+                pathname === '/Work' ? 'underline' : ''
               }`}
               onClick={() => setIsOpen(false)}
             >
