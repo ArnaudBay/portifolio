@@ -20,14 +20,14 @@ export default function About() {
   
             <p>
                 Je suis Arnaud Bayale, un développeur passionné originaire de la Centrafrique. 
-                Spécialisé dans le développement web et mobile, j'aime concevoir des solutions 
+                Spécialise dans le développement web et mobile, j aime concevoir des solutions 
                 innovantes pour répondre aux besoins des utilisateurs. Mon objectif est de 
                 continuer à apprendre et à évoluer dans le domaine de la technologie.
             </p>
 
   
                 <p>
-                    Avec une formation en informatique de gestion, j'ai travaillé sur divers projets, 
+                    Avec une formation en informatique de gestion, j ai travaillé sur divers projets, 
                     allant de la gestion scolaire à la digitalisation des bibliothèques universitaires. 
                     Je cherche constamment à améliorer mes compétences, notamment en développement 
                     d'applications Android et en intégration de nouvelles technologies comme Flutter et Node.js.
