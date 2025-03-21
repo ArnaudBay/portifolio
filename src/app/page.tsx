@@ -1,5 +1,7 @@
 import Image from "next/image";
 import imageSrc from "./assets/1.jpg";
+import imageSrc2 from "./assets/2.jpg";
+import imageSrc3 from "./assets/3.jpg";
 import Link from "next/link";
 
 export default function Home() {
@@ -16,6 +18,42 @@ export default function Home() {
 
       
       <div className="mt-16 flex justify-center">
+        <Image
+          src={imageSrc}
+          //src="./1.jpg" 
+          alt="Description of the image"
+          width={1100}
+          height={200} 
+          className="rounded-lg shadow-lg"
+        />
+       
+      </div>
+      <div className="mt-8 flex justify-end">
+      <Link  className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800" href={""} 
+        >
+          See project
+        </Link>
+        </div>
+
+        <div className="mt-16 flex justify-center">
+        <Image
+          src={imageSrc2}
+          //src="./1.jpg" 
+          alt="Description of the image"
+          width={1100}
+          height={200} 
+          className="rounded-lg shadow-lg"
+        />
+       
+      </div>
+      <div className="mt-8 flex justify-end">
+      <Link  className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800" href={""} 
+        >
+          See project
+        </Link>
+        </div>
+
+        <div className="mt-16 flex justify-center">
         <Image
           src={imageSrc}
           //src="./1.jpg" 
