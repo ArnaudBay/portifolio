@@ -99,7 +99,7 @@ export default function Menu() {
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    Application Mobile de Recettes
+                    Application Mobile de Recettes . 
                   </Link>
                 </div>
               )}
