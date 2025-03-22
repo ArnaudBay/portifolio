@@ -12,7 +12,7 @@ export default function Home() {
     <main className="px-6 py-20">
       {/* Section Mission */}
       <div className="max-w-[1400px] mx-auto text-center">
-        <p className="text-lg mb-8">Our Mission</p>
+        <p className="text-lg mb-8">Notre Mission</p>
         <h1 className="text-5xl font-serif leading-tight">
           Creating spaces that are<br />
           comfortable, memorable and<br />
@@ -30,8 +30,8 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
       </div>
-      <div className="mt-8 flex justify-end">
-        <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
+      <div className="mt-7  flex justify-end ">
+        <Link href="/projet" className="px-11 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -47,7 +47,7 @@ export default function Home() {
         />
       </div>
       <div className="mt-8 flex justify-end">
-        <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
+        <Link href="/projet" className="px-6 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start mb-4">
             <h2 className="text-5xl font-serif">Experiential Design</h2>
-            <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800 justify-items-center ">
+            <Link href="/projet" className="px-6 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800 justify-items-center ">
               See project
             </Link>
           </div>
@@ -76,7 +76,6 @@ export default function Home() {
         </div>
       </section>
 
-      
       <Footer />
     </main>
   );

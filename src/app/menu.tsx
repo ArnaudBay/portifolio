@@ -8,14 +8,16 @@ export default function Menu() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="w-full px-6 py-8">
+    <header className="w-full px-5 py-3 fixed bg-white">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-serif">
-          ArnaudBay
+        <Link href="/" className="text-2xl font-serif ">
+         <strong>
+          Arnaud BAYALE
+          </strong> 
         </Link>
 
-        {/* Burger Button */}
+        
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="z-20 sm:hidden"
@@ -23,7 +25,7 @@ export default function Menu() {
           {isOpen ? <X /> : <MenuIcon />}
         </button>
 
-        {/* Menu Items */}
+        
         <div
           className={`fixed inset-0 bg-white sm:relative sm:bg-transparent ${
             isOpen ? 'flex' : 'hidden sm:flex'
@@ -73,9 +75,9 @@ export default function Menu() {
 
             <Link
               href="/contact"
-              className="px-10 py-4 bg-black text-white rounded-md hover:bg-gray-800"
+              className="px-6 py-3 bg-cyan-600 text-white rounded-full hover:bg-gray-800"
             >
-              Contact
+              Me Contacter
             </Link>
           </div>
         </div>
