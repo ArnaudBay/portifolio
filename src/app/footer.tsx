@@ -35,7 +35,7 @@ export default function Footer() {
           <nav className="flex flex-col space-y-4">
             <Link href="/residential" className="hover:underline">Residential Design</Link>
             <Link href="/commercial" className="hover:underline">Commercial Design</Link>
-            <Link href="/experiential" className="hover:underline">Experiential Design</Link>
+            <Link href="/experiential" className="hover:underline">Experiential Desig</Link>
           </nav>
         </div>
       </div>
