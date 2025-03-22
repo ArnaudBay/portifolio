@@ -13,7 +13,7 @@ export default function Menu() {
         {/* Logo */}
         <Link href="/" className="text-2xl font-serif ">
          <strong>
-          Arnaud BAYALE
+          Arnaud BAYALE.
           </strong> 
         </Link>
 
