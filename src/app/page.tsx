@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
       </div>
 
-      {/* Image 1 */}
+      
       <div className="mt-16 flex justify-center">
         <Image
           src={imageSrc}
@@ -36,7 +36,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Image 2 */}
+      
       <div className="mt-16 flex justify-center">
         <Image
           src={imageSrc2}
@@ -52,7 +52,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Image 3 */}
+      
       <div className="mt-16 flex justify-center">
         <Image
           src={imageSrc3}
@@ -63,7 +63,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Project Section */}
+      
       <section className="mt-32">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start mb-4">
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <Footer />
     </main>
   );
