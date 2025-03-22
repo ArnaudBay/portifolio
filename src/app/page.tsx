@@ -3,6 +3,7 @@ import imageSrc from "./assets/1.jpg";
 import imageSrc2 from "./assets/2.jpg";
 import imageSrc3 from "./assets/3.jpg";
 import Link from "next/link";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -64,54 +65,23 @@ export default function Home() {
         />
        
       </div>
-      <div className="mt-8 flex justify-end">
+       {/* Project Section */}
+       <section className="mt-32">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex justify-between items-start mb-4">
+              <h2 className="text-5xl font-serif">Experiential Design</h2>
+              <div className="mt-8 flex justify-end">
       <Link  className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800" href={""} 
         >
           See project
         </Link>
         </div>
-
-         {/* Footer */}
-      <footer className="px-6 py-20 bg-gray-200">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          
-
-
-          <div>
-            <h3 className="text-2xl font-serif mb-8">Arnaud</h3>
-            <address className="not-italic">
-              <p>123 Demo Street</p>
-              <p>Brooklyn, NY 12345</p>
-            </address>
-            <p className="mt-8">
-              Made with{' '}
-              <a href="#" className="underline hover:text-gray-600">
-                Squarespace
-              </a>
-            </p>
+            </div>
+            <p className="text-xl text-gray-700">Temporary and permanent branded spaces.</p>
           </div>
+        </section>
 
-      
-          <div>
-            <h3 className="text-2xl font-serif mb-8">About</h3>
-            <nav className="flex flex-col space-y-4">
-              <a href="/work" className="hover:underline">Work</a>
-              <a href="/who-we-are" className="hover:underline">Who We Are</a>
-              <a href="/contact" className="hover:underline">Contact Us</a>
-            </nav>
-          </div>
-
-         
-          <div>
-            <h3 className="text-2xl font-serif mb-8">Projects</h3>
-            <nav className="flex flex-col space-y-4">
-              <a href="/residential" className="hover:underline">Residential Design</a>
-              <a href="/commercial" className="hover:underline">Commercial Design</a>
-              <a href="/experiential" className="hover:underline">Experiential Design</a>
-            </nav>
-          </div>
-        </div>
-      </footer>
+        <Footer/>
     </main>
   );
 }
