@@ -31,7 +31,7 @@ export default function Home() {
         />
       </div>
       <div className="mt-8 flex justify-end">
-        <Link href="/about" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
+        <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -47,7 +47,7 @@ export default function Home() {
         />
       </div>
       <div className="mt-8 flex justify-end">
-        <Link href="/about" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
+        <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start mb-4">
             <h2 className="text-5xl font-serif">Experiential Design</h2>
-            <Link href="/about" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800 justify-items-center ">
+            <Link href="/projet" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800 justify-items-center ">
               See project
             </Link>
           </div>
