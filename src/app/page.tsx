@@ -13,7 +13,7 @@ export default function Home() {
       {/* Section Mission */}
       <div className="max-w-[1400px] mx-auto text-center">
         <p className="text-lg mb-8">Our Mission</p>
-        <h1 className="text-6xl font-serif leading-tight">
+        <h1 className="text-5xl font-serif leading-tight">
           Creating spaces that are<br />
           comfortable, memorable and<br />
           inspiring.
@@ -57,7 +57,7 @@ export default function Home() {
         <Image
           src={imageSrc3}
           alt="Description of the image"
-          width={1100}
+          width={1000}
           height={200}
           className="rounded-lg shadow-lg"
         />
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start mb-4">
             <h2 className="text-5xl font-serif">Experiential Design</h2>
-            <Link href="/about" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800">
+            <Link href="/about" className="px-6 py-4 bg-black text-white rounded-md hover:bg-gray-800 justify-items-center ">
               See project
             </Link>
           </div>
