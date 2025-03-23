@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "./footer/footer"; // Assurez-vous que le chemin est correct
-import work from './Work/page';
+//import work from './Work/page';
 
 // Import des images
 import imageSrc from "./assets/1.jpg";
