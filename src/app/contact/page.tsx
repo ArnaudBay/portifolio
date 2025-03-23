@@ -1,5 +1,6 @@
-export default function page() {
 
+
+export default function page() {
 
     return (
 
@@ -8,3 +9,4 @@ export default function page() {
         </div>
     )
 }
+

@@ -7,12 +7,13 @@ import Footer from "./footer/footer"; // Assurez-vous que le chemin est correct
 import imageSrc from "./assets/1.jpg";
 import imageSrc2 from "./assets/2.jpg";
 import imageSrc3 from "./assets/3.jpeg";
-import Page from "./Work/page";
+//import Page from "./Work/page";
 
 export default function Home() {
   return (
     <main className="px-6 py-20">
-      {/* Section Mission */}
+      
+      
       <div className="max-w-[1400px] mx-auto text-center">
         <p className="text-lg mb-8">Notre Mission</p>
         <h1 className="text-5xl font-serif leading-tight">
@@ -77,7 +78,7 @@ export default function Home() {
           <p className="text-xl text-gray-700">Temporary and permanent branded spaces.</p>
         </div>
       </section>
-      <Page />
+      
       <Footer />
     </main>
   );

@@ -33,7 +33,7 @@ export default function Menu() {
           } items-center justify-center`}
         >
           <div className="flex flex-col sm:flex-row items-center gap-8">
-            <Link href="/Work/page" className="text-lg hover:text-gray-600">
+            <Link href="/work" className="text-lg hover:text-gray-600">
               Work
             </Link>
             <Link href="/about" className="text-lg hover:text-gray-600">
