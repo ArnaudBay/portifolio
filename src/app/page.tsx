@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./footer"; // Assurez-vous que le chemin est correct
+import Footer from "./footer/footer"; // Assurez-vous que le chemin est correct
+import work from './Work/page';
 
 // Import des images
 import imageSrc from "./assets/1.jpg";
 import imageSrc2 from "./assets/2.jpg";
 import imageSrc3 from "./assets/3.jpeg";
+import Page from "./Work/page";
 
 export default function Home() {
   return (
@@ -75,7 +77,7 @@ export default function Home() {
           <p className="text-xl text-gray-700">Temporary and permanent branded spaces.</p>
         </div>
       </section>
-
+      <Page />
       <Footer />
     </main>
   );

@@ -10,7 +10,8 @@ export default function Menu() {
   return (
     <header className="w-full px-5 py-3 fixed bg-white">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
+
+        
         <Link href="/" className="text-2xl font-serif ">
          <strong>
           Arnaud BAYALE.
@@ -32,7 +33,7 @@ export default function Menu() {
           } items-center justify-center`}
         >
           <div className="flex flex-col sm:flex-row items-center gap-8">
-            <Link href="/Work" className="text-lg hover:text-gray-600">
+            <Link href="/Work/page" className="text-lg hover:text-gray-600">
               Work
             </Link>
             <Link href="/about" className="text-lg hover:text-gray-600">
@@ -42,10 +43,10 @@ export default function Menu() {
               Services
             </Link>
 
-            {/* Dropdown for Projects */}
+            
             <div
               className="relative"
-              onMouseEnter={() => setIsDropdownOpen(true)}
+                 onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <button className="text-lg hover:text-gray-600">Projects</button>
@@ -57,6 +58,7 @@ export default function Menu() {
                   >
                     Application Mobile suivie Scolaire
                   </Link>
+
                   <Link
                     href="/projects/project2"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
