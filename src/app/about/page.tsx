@@ -1,15 +1,19 @@
 //import Menu from '../menu';
-//import Footer from "./footer/footer";
+import Footer from "../footer/footer";
+import Image from "next/image";
+
+import imageSrc from "../assets/about-us.jpg";
+
 export default function About() {
   
   return (
     
     <div>
-      <main className="px-6 py-20">
+      <main className="pt-30  px-12 grid  text-black">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <h1 className="text-6xl font-serif leading-tight">
-              Who We Are
+              Qui Je SUIS
             </h1>
 
             <div className="space-y-8 text-xl leading-relaxed">
@@ -29,6 +33,18 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        <div className=" grid md:justify-end pt-45 pb-20">
+        <Image
+        src={imageSrc}
+        alt=""
+        width={1500}
+        height={100}
+        className="md:h-175 h-120 md:container"
+        />
+      </div>
+<Footer/>
+
       </main>
     </div>
   );

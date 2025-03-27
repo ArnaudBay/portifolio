@@ -7,7 +7,7 @@ export default function Footer() {
         
         
         <div>
-          <h3 className="text-2xl font-serif mb-8">Bergen</h3>
+          <h3 className="text-2xl font-serif mb-8">Arnaud BAYALE</h3>
           <address className="not-italic">
             <p>123 Demo Street</p>
             <p>Brooklyn, NY 12345</p>
@@ -24,8 +24,8 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-serif mb-8">About</h3>
           <nav className="flex flex-col space-y-4">
-            <Link href="/work" className="hover:underline">Work</Link>
-            <Link href="/who-we-are" className="hover:underline">Who We Are</Link>
+            <Link href="/Work" className="hover:underline">Work</Link>
+            <Link href="/about" className="hover:underline">Who I am</Link>
             <Link href="/contact" className="hover:underline">Contact Us</Link>
           </nav>
         </div>
@@ -34,9 +34,9 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-serif mb-8">Projects</h3>
           <nav className="flex flex-col space-y-4">
-            <Link href="/residential" className="hover:underline">Residential Design</Link>
-            <Link href="/commercial" className="hover:underline">Commercial Design</Link>
-            <Link href="/experiential" className="hover:underline">Experiential Desig</Link>
+            <Link href="/residential" className="hover:underline">Application Mobile</Link>
+            <Link href="/commercial" className="hover:underline">Site Web de Vente</Link>
+            <Link href="/experiential" className="hover:underline">Application Recettes</Link>
           </nav>
         </div>
       </div>

@@ -1,6 +1,7 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./footer/footer"; // Assurez-vous que le chemin est correct
+import Footer from "@/app/footer/footer";
 //import work from './Work/page';
 
 // Import des images
@@ -9,7 +10,7 @@ import imageSrc2 from "./assets/2.jpg";
 import imageSrc3 from "./assets/3.jpeg";
 //import Page from "./Work/page";
 
-export default function Home() {
+export default function page() {
   return (
     <main className="px-6 py-20">
       
@@ -33,8 +34,8 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
       </div>
-      <div className="mt-7  flex justify-end ">
-        <Link href="/projet" className="px-11 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800">
+      <div className="justify-end  px-6 pt-6 mr-6 md:mr-0  flex">
+        <Link href="/projet" className="py-5 px-10 bg-cyan-600 text-white rounded-xl hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -49,8 +50,8 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
       </div>
-      <div className="mt-8 flex justify-end">
-        <Link href="/projet" className="px-6 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800">
+      <div className="justify-end  px-6 pt-6 mr-6 md:mr-0  flex">
+        <Link href="/projet" className="py-5 px-10 bg-cyan-600 text-white rounded-xl hover:bg-gray-800">
           See project
         </Link>
       </div>
@@ -71,11 +72,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-start mb-4">
             <h2 className="text-5xl font-serif">Experiential Design</h2>
-            <Link href="/projet" className="px-6 py-4 bg-cyan-600 text-white rounded-full hover:bg-gray-800 justify-items-center ">
+            <Link href="/projet" className="py-5 px-10 bg-cyan-600 text-white rounded-xl hover:bg-gray-800 md:mr-0">
               See project
             </Link>
           </div>
-          <p className="text-xl text-gray-700">Temporary and permanent branded spaces.</p>
+          <p className="text-x2 text-gray-700">Temporary and permanent branded spaces.</p>
         </div>
       </section>
       

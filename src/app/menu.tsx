@@ -33,19 +33,19 @@ export default function Menu() {
           } items-center justify-center`}
         >
           <div className="flex flex-col sm:flex-row items-center gap-8">
-            <Link href="/work" className="text-lg hover:text-gray-600">
+            <Link href="/Work" className="text-lg hover:text-gray-600">
               Work
             </Link>
             <Link href="/about" className="text-lg hover:text-gray-600">
               About
             </Link>
-            <Link href="/services" className="text-lg hover:text-gray-600">
+            <Link href="/Services" className="text-lg hover:text-gray-600">
               Services
             </Link>
 
             
             <div
-              className="relative"
+              className="relative group"
                  onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
@@ -53,23 +53,23 @@ export default function Menu() {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md">
                   <Link
-                    href="/projects/project1"
+                    href="/ApkMobile"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Application Mobile suivie Scolaire
+                    Application Mobile 
                   </Link>
 
                   <Link
-                    href="/projects/project2"
+                    href="/SiteWeb"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Site Web de Vente de Voitures
+                    Site Web de Vente
                   </Link>
                   <Link
-                    href="/projects/project3"
+                    href="/ApkRecettes"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Application Mobile de Recettes
+                    Application Recettes
                   </Link>
                 </div>
               )}
