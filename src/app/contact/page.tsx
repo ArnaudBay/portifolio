@@ -4,7 +4,7 @@ import { z } from 'zod';
 import Menu from '../menu';
 import Footer from '../footer/footer';
 
-// Définition du schéma avec zod
+
 const contactFormSchema = z.object({
   name: z.string().min(1, 'Name is required'),
   email: z.string().email('Invalid email address'),
