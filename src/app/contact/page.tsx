@@ -26,7 +26,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      // Validation avec zod
+      
       const validatedData = contactFormSchema.parse(formData);
       console.log('Form data:', validatedData);
       alert('Message sent successfully!');
