@@ -58,7 +58,7 @@ export default function Menu() {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md">
                   <Link
-                    href="/ApkMobile"
+                    href="/apkMobile"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => setIsOpen(false)}
                   >
@@ -72,7 +72,7 @@ export default function Menu() {
                     Site Web de Vente
                   </Link>
                   <Link
-                    href="/ApkRecettes"
+                    href="/apkRecettes"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => setIsOpen(false)}
                   >
