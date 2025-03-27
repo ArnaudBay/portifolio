@@ -87,7 +87,7 @@ export default function Menu() {
               className="px-6 py-3 bg-cyan-600 text-white rounded-full hover:bg-gray-800"
               onClick={() => setIsOpen(false)}
             >
-              Me Contacter
+              Me Contacter.
             </Link>
           </div>
         </div>
