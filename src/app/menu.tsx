@@ -10,15 +10,12 @@ export default function Menu() {
   return (
     <header className="w-full px-5 py-3 fixed bg-white">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-
-        
-        <Link href="/" className="text-2xl font-serif ">
-         <strong>
-          Arnaud BAYALE.
-          </strong> 
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-serif">
+          <strong>Arnaud BAYALE.</strong>
         </Link>
 
-        
+        {/* Burger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="z-20 sm:hidden"
@@ -26,27 +23,39 @@ export default function Menu() {
           {isOpen ? <X /> : <MenuIcon />}
         </button>
 
-        
+        {/* Menu Items */}
         <div
           className={`fixed inset-0 bg-white sm:relative sm:bg-transparent ${
             isOpen ? 'flex' : 'hidden sm:flex'
           } items-center justify-center`}
         >
           <div className="flex flex-col sm:flex-row items-center gap-8">
-            <Link href="/Work" className="text-lg hover:text-gray-600">
+            <Link
+              href="/Work"
+              className="text-lg hover:text-gray-600"
+              onClick={() => setIsOpen(false)} // Ferme le menu après un clic
+            >
               Work
             </Link>
-            <Link href="/about" className="text-lg hover:text-gray-600">
+            <Link
+              href="/about"
+              className="text-lg hover:text-gray-600"
+              onClick={() => setIsOpen(false)} // Ferme le menu après un clic
+            >
               About
             </Link>
-            <Link href="/Services" className="text-lg hover:text-gray-600">
+            <Link
+              href="/Services"
+              className="text-lg hover:text-gray-600"
+              onClick={() => setIsOpen(false)} // Ferme le menu après un clic
+            >
               Services
             </Link>
 
-            
+            {/* Dropdown for Projects */}
             <div
               className="relative group"
-                 onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <button className="text-lg hover:text-gray-600">Projects</button>
@@ -55,19 +64,21 @@ export default function Menu() {
                   <Link
                     href="/ApkMobile"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsOpen(false)} // Ferme le menu après un clic
                   >
-                    Application Mobile 
+                    Application Mobile
                   </Link>
-
                   <Link
                     href="/SiteWeb"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsOpen(false)} // Ferme le menu après un clic
                   >
                     Site Web de Vente
                   </Link>
                   <Link
                     href="/ApkRecettes"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    onClick={() => setIsOpen(false)} // Ferme le menu après un clic
                   >
                     Application Recettes
                   </Link>
@@ -78,6 +89,7 @@ export default function Menu() {
             <Link
               href="/contact"
               className="px-6 py-3 bg-cyan-600 text-white rounded-full hover:bg-gray-800"
+              onClick={() => setIsOpen(false)} // Ferme le menu après un clic
             >
               Me Contacter
             </Link>

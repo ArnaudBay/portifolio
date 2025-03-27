@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { z } from 'zod';
-import Menu from '../menu';
+//import Menu from '../menu';
 import Footer from '../footer/footer';
 
 
@@ -51,7 +51,6 @@ export default function Contact() {
 
   return (
     <div>
-      <Menu />
       <main className="min-h-screen flex flex-col items-center justify-center px-6">
         <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
