@@ -13,7 +13,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <h1 className="text-6xl font-serif leading-tight">
-              Qui Je SUIS
+              QUI JE SUIS
             </h1>
 
             <div className="space-y-8 text-xl leading-relaxed">

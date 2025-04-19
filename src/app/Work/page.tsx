@@ -2,13 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../footer/footer";
-//import work from './Work/page';
-
-// Import des images
 import imageSrc from "../assets/1.jpg";
 import imageSrc2 from "../assets/2.jpg";
 import imageSrc3 from "../assets/3.jpeg";
-//import Page from "./Work/page";
+
 
 export default function page() {
   return (

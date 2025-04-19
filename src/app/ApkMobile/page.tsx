@@ -16,7 +16,8 @@ export default function page () {
           </div>
           <div >
             <p className="tracking-wide text-[16px] lg:tracking-wider lg:w-165 lg:text-[16.5px]  pb-20 text-base leading-8 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+             
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Suspendisse sit amet ex vel lectus aliquet porttitor. 
             Proin sollicitudin vitae purus at cursus. 
             Nullam suscipit ultricies lectus in efficitur. 
